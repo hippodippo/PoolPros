@@ -1,0 +1,91 @@
+{
+  "name": "pool_pros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "jest ./test",
+    "start": "webpack-dev-server",
+    "build": "webpack --env.prod",
+    "lint": "eslint --fix",
+    "flow": "flow",
+    "setup": "npm install"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "flow",
+      "react"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "rules": {
+      "eol-last": 0,
+      "class-methods-use-this": 0,
+      "no-undef": 0,
+      "no-unused-vars": 0,
+      "import/extensions": true,
+      "max-len": [
+        1,
+        120,
+        2,
+        {
+          "ignoreComments": true
+        }
+      ]
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "airbnb-base"
+    ]
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./test/enzyme.setup.js"
+  },
+  "author": "Kaycee Ingram",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "file-loader": "^1.1.11",
+    "flow-bin": "^0.73.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
+    "node-sass": "^4.9.0",
+    "path": "^0.12.7",
+    "react-test-renderer": "^16.3.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

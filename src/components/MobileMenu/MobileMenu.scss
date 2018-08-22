@@ -1,0 +1,112 @@
+  @import '../../styles/partials/_colors.scss';
+
+  /* Mobile Menu */
+  /***********************************************/
+
+#Mobile-Menu {
+  width: 100%;
+  height: 56%;
+  border-top: 7.5px solid $light-blue;
+  border-bottom: 7.5px solid $light-blue;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 900ms
+              cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
+
+  .Mobile-Menu__heading {
+    color: $dark-blue;
+    font-size: 23px;
+    padding: 23px 40px;
+  }
+
+  .Mobile-Menu__x-icon {
+    height: 37px;
+    width: 37px;
+    float: right;
+    margin-right: 17px;
+    margin-top: 14px;
+  }
+
+  .Mobile-Menu__Links {
+    height: 15.8%;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+
+    .Mobile-Menu__Link {
+      text-decoration: none;
+    }
+
+    .Mobile-Menu__Link li {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 23px;
+      margin-top: 3px;
+      font-size: 20px;
+      color: #777;
+      background-color: #F6F6F6;
+    }
+
+    .Mobile-Menu__Link li:active {
+      color: $blue;
+    }
+
+    .Mobile-Menu__Link__next-arrow {
+      height: 23px;
+      width: 17px;
+    }
+  }
+
+  @media (min-height: 600px) {
+    .Mobile-Menu__Links {
+      height: 16.7%;
+    }
+  }
+
+  @media (min-height: 625px) {
+    .Mobile-Menu__Links {
+      height: 16.85%;
+    }
+  }
+
+  @media (min-height: 650px) {
+    .Mobile-Menu__Links {
+      height: 17.3%;
+    }
+  }
+
+  @media (min-height: 700px) {
+    .Mobile-Menu__Links {
+      height: 17.8%;
+    }
+  }
+
+  @media (min-height: 800px) {
+    .Mobile-Menu__Links {
+      height: 18.8%;
+    }
+  }
+
+  @media (min-height: 900px) {
+    .Mobile-Menu__Links {
+      height: 19.8%;
+    }
+  }
+}
+
+#Mobile-Menu.hide {
+  transform: translate3d(0, -200vw, 0);
+  transition: 3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#Mobile-Menu.show {
+  transform: translate3d(0px, 0px, 0px);
+  overflow: hidden;
+  box-shadow: 0 4px 23px #333;
+}

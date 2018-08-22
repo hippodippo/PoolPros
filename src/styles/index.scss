@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'OpenSans';
+  src:  url('../fonts/OpenSans-Light.ttf') format('ttf'),
+        url('../fonts/OpenSans-LightItalic.ttf') format('ttf'),
+        url('../fonts/OpenSans-Regular.ttf') format('ttf'),
+        url('../fonts/OpenSans-Semibold.ttf') format('ttf'),
+        url('../fonts/OpenSans-SemiboldItalic.ttf') format('ttf'),
+        url('../fonts/OpenSans-Bold.ttf') format('ttf'),
+        url('../fonts/OpenSans-BoldItalic.ttf') format('ttf'),
+        url('../fonts/OpenSans-ExtraBold.ttf') format('ttf'),
+        url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans', sans-serif;
+  background-image: url('../img/water-image.png');
+  background-attachment: fixed;
+  background-position: 77% 23%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 883px) {
+  body {
+    background-position: 77% 33%;
+  }
+}
