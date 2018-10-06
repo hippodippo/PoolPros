@@ -28,7 +28,7 @@ I am pulling the data from a basic server that gives us the JSON data that you p
 We fetch the data in the "FindProPage" Page Component located at src/pages/FindProPage/FindProPage.js
 
 ## Custom Checkboxes
-![Mobile Preview](/src/img/mobile-preview.png =300x300)
+![Mobile Preview](/src/img/mobile-preview.png)
 
 ## Cheers, Kaycee Ingram
 
