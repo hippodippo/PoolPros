@@ -16,9 +16,9 @@ function Filter(props) {
               <p className="Filter__headings__filter">
                 Filter Results
               </p>
-              <button className="Filter__headings--right__FilterResultsBtn">
+              {/* <button className="Filter__headings--right__FilterResultsBtn">
                 <img src={FilterResultsBtn} alt="Filter Results Button" />
-              </button>
+              </button> */}
             </div>
           </div>
         </header>

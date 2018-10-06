@@ -27,6 +27,9 @@
 I am pulling the data from a basic server that gives us the JSON data that you provided in the FED folder.
 We fetch the data in the "FindProPage" Page Component located at src/pages/FindProPage/FindProPage.js
 
+## Custom Checkboxes
+![Mobile Preview](/src/img/mobile-preview.png)
+
 ## Cheers, Kaycee Ingram
 
 ## P.S. Anything else I need to learn, I more than happy to dive right in :)
