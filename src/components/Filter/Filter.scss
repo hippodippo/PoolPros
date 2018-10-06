@@ -1,8 +1,11 @@
+@import '../../styles/partials/_colors';
+
 .Filter {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 7px 3px;
+  border-bottom: 1px solid #ccc;
   background-color: #f7f7f7;
 }
 
@@ -18,28 +21,98 @@
   display: flex;
 }
 
-.Filter__headings__filter {
-  margin-left: 3px;
-}
-
 .Filter__inputs {
   flex-direction: column;
+  max-width: 700px;
 }
 
 .Filter__input {
   align-items: center;
+  margin: 14px;
 }
 
-// .Filter__input input[type="checkbox"] {
-//   border: 3px solid blue;
-//   border-radius: 3px;
-// }
+.Filter__headings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  font-weight: 900;
+}
 
-.cool-checkbox {
-  top: 0;
-  left: 0;
-  border: solid;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
+.Filter__headings--left {
+}
+
+.Filter__headings--right {
+  display: flex;
+  flex-direction: row;
+}
+
+.Filter__headings--right__FilterResultsBtn {
+  padding: 0px 14px;
+  border: .5px solid #DDD;
+  border-bottom: none;
+  border-left: none;
+  background-color: #F3F3F3;
+}
+
+.Filter__headings--right__FilterResultsBtn img {
+  height: 11px;
+  width: 9px;
+}
+
+.Filter__headings__filter {
+  border: 1.3px solid #ccc;
+  border-bottom: .5px;
+  padding: 11px 7px;
+  margin-left: 3px;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.Filter__headings__dealers {
+  padding-right: 7px;
+  margin-bottom: 0;
+  color: $blue;
+}
+
+// -----------------
+// Custom Checkboxes
+// -----------------
+
+fieldset {
+  width: 75vw;
+  max-width: 300px;
+  margin-bottom: 11px;
+  border-color: #ccc;
+  background-color: #fff;
+}
+
+input[type=checkbox].css-checkbox {
+  position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left:30px;
+  height:25px;
+  display:inline-block;
+  line-height:25px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:16px;
+  vertical-align:middle;
+  cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -25px;
+}
+
+label.css-label {
+  background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_1e8ba565f3fc661e22e394c4d98e4f9a.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

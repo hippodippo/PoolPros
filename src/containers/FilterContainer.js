@@ -14,7 +14,7 @@ class FilterContainer extends Component {
   render() {
     return (
       <Fragment>
-        <Filter numberOfDealers={this.props.dealers.length} zipcode={this.props.zipcode}/>
+        <Filter numberOfDealers={this.props.numberOfDealers} zipcode={this.props.zipcode} handleChange={this.props.handleChange}/>
       </Fragment>
     );
   }
